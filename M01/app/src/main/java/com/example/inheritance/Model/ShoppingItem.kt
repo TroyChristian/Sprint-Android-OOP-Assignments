@@ -2,7 +2,7 @@ package com.example.inheritance.Model
 
 import android.util.Log
 
-open class ShoppingItem(open var name: String, val colorId: String){
+open class ShoppingItem(open var name: String, val colorId: Int){
 
 
    open fun getDisplayName(): String{
@@ -10,7 +10,7 @@ open class ShoppingItem(open var name: String, val colorId: String){
     }
 }
 
-class GroceryItem(name: String, colorId: String, var isExpired:Boolean ): ShoppingItem(name, colorId){
+class GroceryItem(name: String, colorId: Int, var isExpired:Boolean ): ShoppingItem(name, colorId){
     override fun getDisplayName(): String{
 
         return " $name is expired $isExpired"
@@ -20,7 +20,7 @@ class GroceryItem(name: String, colorId: String, var isExpired:Boolean ): Shoppi
 
 }
 
-class ClothingItem(name: String, colorId: String, var size: Int): ShoppingItem(name, colorId){
+class ClothingItem(name: String, colorId: Int, var size: Int): ShoppingItem(name, colorId){
     override fun getDisplayName():String{
         return "this $name is size $size"
 
@@ -29,12 +29,13 @@ class ClothingItem(name: String, colorId: String, var size: Int): ShoppingItem(n
 
 }
 
-class ExcerciseItem(name:String, colorId: String, var brand: String): ShoppingItem(name, colorId){
+class ExcerciseItem(name:String, colorId: Int, var brand: String): ShoppingItem(name, colorId){
     override fun getDisplayName():String{
         return "this $name is part of the brand $brand"
 
     }
 }
+
 
 
 
