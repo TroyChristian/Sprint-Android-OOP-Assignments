@@ -67,7 +67,9 @@ class AlienUFO(id:String, weight:Int, favorite:Boolean):Vehicle(id, weight, favo
     override fun drive():String{
         return "The ground undulates in unnatural acceptance of alien gears churning newly disturbed soil as the galactic Warmachine pulls itself over Terra Firma"
     }
-}
+
+    fun desc():String{
+        return "The $this.id  can fly, sail, or drive. It weighs $
 
 class RaceCar(id:String, weight: Int, favorite:Boolean):Vehicle(id, weight, favorite), GroundTravel{
     override fun travel():String{
@@ -94,9 +96,9 @@ class TroysDodgeJourney(id:String, weight:Int, favorite:Boolean):Vehicle(id, wei
         return "Tires Screech as I traverse the dangerous highways of Mid-Florida, dodging snow-birds and retiree's."
     }
 }
-
+companion object {
 var myCar = TroysDodgeJourney("Ol' reliable", 2000, true )
 var alienStarDestroyer = AlienUFO("Imperial Cruiser", 1000000, false)
 var wings = FighterJet("SonicJudgement", 1500, false)
 var jetski = JetSki("WaveMaster", 500, false)
-var fleet = mutableListOf(myCar, alienStarDestroyer, wings, jetski)
+var fleet = mutableListOf(myCar, alienStarDestroyer, wings, jetski)}}

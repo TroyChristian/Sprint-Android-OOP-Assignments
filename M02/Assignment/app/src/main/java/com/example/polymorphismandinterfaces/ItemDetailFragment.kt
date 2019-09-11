@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.polymorphismandinterfaces.dummy.DummyContent
 import kotlinx.android.synthetic.main.activity_item_detail.*
 import kotlinx.android.synthetic.main.item_detail.view.*
+import model.Vehicle
 
 /**
  * A fragment representing a single Item detail screen.

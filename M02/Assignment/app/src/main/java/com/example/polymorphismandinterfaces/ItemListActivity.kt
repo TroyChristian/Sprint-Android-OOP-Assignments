@@ -2,6 +2,7 @@ package com.example.polymorphismandinterfaces
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.snackbar.Snackbar
@@ -15,9 +16,9 @@ import kotlinx.android.synthetic.main.activity_item_list.*
 import kotlinx.android.synthetic.main.item_list_content.view.*
 import kotlinx.android.synthetic.main.item_list.*
 import model.AlienUFO
+import model.AlienUFO.Companion.alienStarDestroyer
 import model.FighterJet
-import model.JetSki
-import model.TroysDodgeJourney
+
 
 /**
  * An activity representing a list of Pings. This activity
@@ -38,7 +39,7 @@ class ItemListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item_list)
-
+        Log.i("tag", alienStarDestroyer.desc())
 
 
 
