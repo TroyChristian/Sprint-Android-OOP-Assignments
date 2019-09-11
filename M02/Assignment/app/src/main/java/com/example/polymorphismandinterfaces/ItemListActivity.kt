@@ -14,6 +14,10 @@ import com.example.polymorphismandinterfaces.dummy.DummyContent
 import kotlinx.android.synthetic.main.activity_item_list.*
 import kotlinx.android.synthetic.main.item_list_content.view.*
 import kotlinx.android.synthetic.main.item_list.*
+import model.AlienUFO
+import model.FighterJet
+import model.JetSki
+import model.TroysDodgeJourney
 
 /**
  * An activity representing a list of Pings. This activity
@@ -34,6 +38,9 @@ class ItemListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item_list)
+
+
+
 
         setSupportActionBar(toolbar)
         toolbar.title = title
